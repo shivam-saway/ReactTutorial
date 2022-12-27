@@ -22,3 +22,9 @@ React is known as React because of its behaviour. It is designed to act or chang
 crossorigin is the keyword used as attribute in the script tags, to set the CORS policy to be used while sharing data over diffrent domain names or servers. As per MDN Docs it can have two values "anonymous" or "use-credentials". it can be set to empty string also which is same as setting crossorigin to anonymous. when the crossorigin is set to "anonymous" the network requests from diffrent domain names uses CORS headers and credential flag is set to the "same-origin". There is no exchange of user credentials via cookies, client side SSL certificate or HTTP Authentication, unless destination is the same origin.
 When the crossorigin is set to "use-credentials", the network request uses CORS Headers and credential flag is set to "include" and user credentials are always included.
 MDN Docs link https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/crossorigin 
+## Question: What is async and defer attribute in script tag ?
+##### Answer: 
+##### Async
+when the script tag has async attribute. the scripts are fetched asynchronously in parallel with HTML Parsing. However, the script loading starts immediately after the scripts have fetched successfully from the network. HTML parsing may get halted, if not completed.
+##### Defer:
+when the script tag has defer attribute. the scripts are fetched asynchronously in parallel with HTML Parsing. However, the script loading starts immediately after the HTML parsing completes and scripts have fetched successfully from the network. HTML parsing never get halted once started in this process.
