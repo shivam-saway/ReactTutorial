@@ -14,3 +14,10 @@ Likewise we setup emmet for other files too.
 React Library is responsible for creating views and on the other hand ReactDOM renders the view created by React Library. React is a special library that is designed to update the DOM for us. In React we don't update the DOM directly instead react updates it for us on the basis of our commands.
 The smallest entity in react is the react element. it is basically a javascript object that describes DOM element in memory. we can create a react element using React's createElement method. 
 ReactDOM on the other hand serves as a middle man to convert the javascript object to DOM Nodes, created by createElement method of React Library.
+## Question: Why React is known as React ?
+##### Answer:
+React is known as React because of its behaviour. It is designed to act or change the user interface on the basis of user's action.
+## Question: What is crossorigin in script tag ?
+##### Answer:
+crossorigin is the keyword used as attribute in the script tags, to set the CORS policy to be used while sharing data over diffrent domain names or servers. As per MDN Docs it can have two values "anonymous" or "use-credentials". it can be set to empty string also which is same as setting crossorigin to anonymous. when the crossorigin is set to "anonymous" the network requests from diffrent domain names does go through authorization check while in case of "use-credentials" the network request has to be authorized for sharing the reasource.
+MDN Docs link https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/crossorigin 
