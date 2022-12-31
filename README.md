@@ -29,4 +29,4 @@ when the script tag has async attribute. the scripts are fetched asynchronously 
 ##### Defer:
 when the script tag has defer attribute. the scripts are fetched asynchronously in parallel with HTML Parsing. However, the script loading starts immediately after the HTML parsing completes and scripts have fetched successfully from the network. HTML parsing never get halted once started in this process.
 ## Question: What is bundler ? 
-##### Answer: Todo
+##### Answer: Todo - example parcel, webpack etc.
