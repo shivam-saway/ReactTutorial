@@ -31,4 +31,9 @@ when the script tag has defer attribute. the scripts are fetched asynchronously 
 ## Question: What is bundler ? 
 ##### Answer: Todo - example parcel, webpack etc.
 create react app uses webpack. 
-
+## Question: What is npm ? What is the uses of npm ?
+## Question: What is package.json file. What is its purpose ?
+## Question: What is package-lock.json file. What is its purpose ?
+##### Answer :
+This is important file. it locks the versions of libraries for production use.
+Never put this file in gitignore file.
