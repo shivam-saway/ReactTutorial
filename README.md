@@ -28,3 +28,5 @@ MDN Docs link https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/cross
 when the script tag has async attribute. the scripts are fetched asynchronously in parallel with HTML Parsing. However, the script loading starts immediately after the scripts have fetched successfully from the network. HTML parsing may get halted, if not completed.
 ##### Defer:
 when the script tag has defer attribute. the scripts are fetched asynchronously in parallel with HTML Parsing. However, the script loading starts immediately after the HTML parsing completes and scripts have fetched successfully from the network. HTML parsing never get halted once started in this process.
+## Question: What is bundler ? 
+##### Answer: Todo
