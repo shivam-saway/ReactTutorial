@@ -37,3 +37,4 @@ create react app uses webpack.
 ##### Answer :
 This is important file. it locks the versions of libraries for production use.
 Never put this file in gitignore file.
+It maintains the hash of libraries to ensure the integrity in production and development.
