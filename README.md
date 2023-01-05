@@ -104,3 +104,12 @@ dist folder holds the minified version of our projects files, which were created
 + In production builds, parcel statically analyzez the each import and export of your projects, and removes everything that is not used.
 + tree shaking supports for both static and dynamic imports, commonJS and ES6 Modules and even across languages with CSS Modules.
 + parcel also concatenates modules into single scope, when possible rather than wrapping each module in a seprate function. This feature is called scope hoisting. This helps make minification more effective and also improves runtime performance by making references between modules static rather than dynamic object lookup.
+## Question: What is Hot Module Replacement ?
+##### Answer: 
++ As you make changes to your code, parcel automatically detects the code changes and rebuilds the app and update the UI in your browser. however, in somecases the parcels does Hot Module Replacement (HMR). In HMR, parcel updates the particular module only and maintains the state of your application.
++ CSS changes are automatically applied by HMR without reloading the page.
++ This feature is also available in some framework like react (via fast refresh) and Vue.
++ HMR works by replacing the code of hot module and re-evaluate it along with its parents. we can customize the process of HMR by using two methods i.e., hot.module.accept and hot.module.dispose.
++ both the methods accepts a callback function.
++ accept method is executed when the module or any of its dependency get updated. we can use it to restore state from old verison.
++ dispose method is executed when the module is about to replace. we can use it to save any state to restore in any new version or clean up objects and timer which will be created in new version.
