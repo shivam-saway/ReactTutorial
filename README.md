@@ -74,11 +74,13 @@ create react app uses webpack.
    - Content hashing
    - Zero Config bundler
    - Diffrential bindling
-## Question: What is hot module reload ?
-##### Answer: Todo
-Hint : File watcher algorithm - written in c++.
-## Question: What is parcel-cache ?
-##### Answer: Todo
+## Question: What is parcel-cache?
+##### Answer: 
++ parcel-cache as name suggest it cache the build data of your node project. when parcel rebuilds your node project after detecting code change or when someone mannually rebuilds the project, parcel does not build everything from scratch again, instead it only builds the changes done. This is a kind of build optimization technique which helps in reducing the development time and overall productivity of the developer.
++ It is one of the key reasons for the fastness of the parcel bundler.
++ always add parcel-cache and dist folder to your gitignore file.
++ you can also override the location of the cache using the --cache-dir CLI Option
++ you can also disable the cache using --no-cache flag. This will only disable reading from the cache and cache folder will still be created.
 ## Question: What is dist folder ? What is it's purpose ?
 ##### Answer: 
 dist folder holds the minified version of our projects files, which were created by parcel while building the project for hosting on server.
