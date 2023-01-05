@@ -113,3 +113,20 @@ dist folder holds the minified version of our projects files, which were created
 + both the methods accepts a callback function.
 + accept method is executed when the module or any of its dependency get updated. we can use it to restore state from old verison.
 + dispose method is executed when the module is about to replace. we can use it to save any state to restore in any new version or clean up objects and timer which will be created in new version.
+## Question: List down your favourite 5 superpowers of Parcel and describe any 3 of them in your own words.
+##### Answer: 
+Five superpowers of parcel which i like are as follows
++ Code Minification
++ Hot Module Replacement (HMR)
++ File Watcher Algorithm.
++ Caching
++ Dev Server and HTTPS
+
+I will explain each of the above one by one.
+
+1. Code Minification: 
+   - Code Minification is the process of shorting the code. While minifying any code redundant line space, long variable names, long functions/classes/objects names get replaced with their shorter version.
+   - All your code in multiple files will be placed together in single file, which is hard to understand for human, even if it is still written in high level langauge.
+   - Minification reduces the size of your code file, which can be shared with client at fast pace over the network.
+2. Caching: 
+3. Dev Server and HTTPS: 
