@@ -97,3 +97,10 @@ dist folder holds the minified version of our projects files, which were created
 | --- | --- |
 | dependencies are the third-party javascript modules which are required by our project in production environment | devDependencies are the third-party javascript modules which are required by our project in development environment only|
 | Included in final code bundle | Not Included in final code bundle |
+
+## Question: What is tree shaking ?
+##### Answer: 
++ tree shaking is also known as dead code elimination.
++ In production builds, parcel statically analyzez the each import and export of your projects, and removes everything that is not used.
++ tree shaking supports for both static and dynamic imports, commonJS and ES6 Modules and even across languages with CSS Modules.
++ parcel also concatenates modules into single scope, when possible rather than wrapping each module in a seprate function. This feature is called scope hoisting. This helps make minification more effective and also improves runtime performance by making references between modules static rather than dynamic object lookup.
