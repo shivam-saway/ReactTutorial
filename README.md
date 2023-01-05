@@ -84,4 +84,15 @@ create react app uses webpack.
 ## Question: What is dist folder ? What is it's purpose ?
 ##### Answer: 
 dist folder holds the minified version of our projects files, which were created by parcel while building the project for hosting on server.
- 
+## Question: What is npx ?
+##### Answer: 
++ npx is a tool through which any developer can execute any javascript package available on npm directory without even installing the package.
++ npx comes along with npm for version above 5.2.
++ to check wheather npx is installed in our machine . we write "npx -v" in cmd or terminal.
++ if it is not installed use command "npm i -g npx".
+## Question: What is diffrence between dependencies and devDependencies ?
+##### Answer: 
+
+| dependencies | devDependencies |
+| --- | --- |
+| dependencies are the third-party javascript modules which are required by our project in production environment | devDependencies are the third-party javascript modules which are required by our project in development environment only|
