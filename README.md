@@ -96,3 +96,4 @@ dist folder holds the minified version of our projects files, which were created
 | dependencies | devDependencies |
 | --- | --- |
 | dependencies are the third-party javascript modules which are required by our project in production environment | devDependencies are the third-party javascript modules which are required by our project in development environment only|
+| Included in final code bundle | Not Included in final code bundle |
