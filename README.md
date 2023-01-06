@@ -129,4 +129,14 @@ I will explain each of the above one by one.
    - All your code in multiple files will be placed together in single file, which is hard to understand for human, even if it is still written in high level langauge.
    - Minification reduces the size of your code file, which can be shared with client at fast pace over the network.
 2. Caching: 
+   - parcel caches everything, it builds to disk. if you restart the dev server parcel will only rebuilds the files that have changed since the last time it ran.
+   - parcel keeps track of all the files in your project, if you change anything in your project. it invalidates the cache and rebuild the changed file in your project.
 3. Dev Server and HTTPS: 
+   - parcel has a feature which creates a dev server for you in local machine. it starts automatically when you run default parcel command.
+   - although, the parcel has a special command for it i.e., "parcel serve".
+   - the default port is http://localhost:1234 
+   - if default port is in use then fallback port will be use.
+## Question: What is ".gitignore"? What should we add and not add into it?
+##### Answer:
+git ignore is file used in local git repository to diffrentiate between files which should be pushed to git or not.
+we should put all files in gitignore which can be reproduced while making build for production.
