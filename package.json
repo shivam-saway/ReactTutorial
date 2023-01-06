@@ -2,9 +2,9 @@
   "name": "reacttutorial",
   "version": "1.0.0",
   "description": "React Tutorial",
-  "main": "App.js",
   "devDependencies": {
-    "parcel": "^2.8.2"
+    "parcel": "^2.8.2",
+    "process": "^0.11.10"
   },
   "scripts": {
     "test": "jest"
@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/shivam-saway/ReactTutorial/issues"
   },
-  "homepage": "https://github.com/shivam-saway/ReactTutorial#readme"
+  "homepage": "https://github.com/shivam-saway/ReactTutorial#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }
