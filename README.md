@@ -140,3 +140,18 @@ I will explain each of the above one by one.
 ##### Answer:
 git ignore is file used in local git repository to diffrentiate between files which should be pushed to git or not.
 we should put all files in gitignore which can be reproduced while making build for production.
+## Question: What is polyfill ?
+##### Answer: 
+Todo
+## Question: What is reconcillation in react ?
+##### Answer:
+Todo
+## Question: What is JSX ? How it is diffrent from HTML ?
+##### Answer:
+Todo
+## Question: What is babel ? How it works with modern javascript ?
+##### Answer:
+Todo
+
+
+Functional Component Function Name starts with capital letter or Capitalize Each Word : Convention in Modern Javascript.
