@@ -142,10 +142,17 @@ git ignore is file used in local git repository to diffrentiate between files wh
 we should put all files in gitignore which can be reproduced while making build for production.
 ## Question: What is polyfill ?
 ##### Answer: 
-Todo
+A polyfill is a peice of code (usually in javascript) used to support modern application in older versions of browsers that do not natively supports it.
+
+For example, older version of browsers does not understand few CSS properties like text-shadow. So a polyfill code in javascript can be written to mimic the text-shadow effect.
+
+Sometimes polyfills are written to avoid browser specific issues in implementation of specific features of application which works smoothly in latest browsers.
+
+However polyfills are rarely used in todays world. Polyfills were in trends in time of IE6 and Netscape web browsers. These older version of browsers interpret javascript diffrently. So to make the application work in same manner accross diffrent browsers poyfill was the best choice among the developers in pervious decades.
+
 ## Question: What is reconcillation in react ?
 ##### Answer:
-Todo
+
 ## Question: What is JSX ? How it is diffrent from HTML ?
 ##### Answer:
 Todo
@@ -155,3 +162,12 @@ Todo
 
 
 Functional Component Function Name starts with capital letter or Capitalize Each Word : Convention in Modern Javascript.
+
+## Server side routing
+## Client side routing
+## Object.values
+## Shimmer Effect - UX Design Principle
+## Routing in React - React Router Library
+## Super(props) - why it is there in constructor of react.
+## can we make lifecycle method async ?
+## can we make callback function of useEffect async ?
