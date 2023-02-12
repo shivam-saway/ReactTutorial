@@ -184,16 +184,38 @@ Following are few advantages of using JSX.
  - JSX tags can have childrens as well. We use circle bracket to unite children JSX with parent JSX. For example
  - ```
       const profile = (
-         <h1>Hello</h1>
-         <h2>My Self Shivam Saway</h2>
-         <img />
+         <div>
+               <h1>Hello</h1>
+               <h2>My Self Shivam Saway</h2>
+               <img src="hello.png"/>
+         </div>
       );
    ```
 
 ## Question: What is babel ? How it works with modern javascript ?
 ##### Answer:
-Todo
+Babel is compiler for modern javascript langauges. Babel can do many things for us. Few is listed below.
 
+1. Babel can do syntax tranformation. For example
+
+2. This peice of code 
+   ```
+      const profile = (
+         <div>
+               <h1>Hello</h1>
+               <h2>My Self Shivam Saway</h2>
+               <img src="hello.png"/>
+         </div>
+      );
+   ```
+   will transformed to this by babel automatically
+   ```
+      const profile = React.CreateElement('div', {
+         React.CreateElement('h1','Hello'),
+         React.CreateElement('h2','My Self Shivam Saway'),
+         React.CreateElement('img',null,{ src = "hello.png"})
+      });
+   ```
 
 Functional Component Function Name starts with capital letter or Capitalize Each Word : Convention in Modern Javascript.
 
