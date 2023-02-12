@@ -183,11 +183,11 @@ Following are few advantages of using JSX.
  - We can use quotes and curly braces to specify attributes to JSX tags. We should not use both quotes and curly braces together while specifying attribute on JSX tags. quotes should be used with strings and braces should be used with JavaScript expression.
  - JSX tags can have childrens as well. We use circle bracket to unite children JSX with parent JSX. For example
  - ```
- const profile = (
-   <h1>Hello</h1>
-   <h2>My Self Shivam Saway</h2>
-   <img />
- );
+      const profile = (
+         <h1>Hello</h1>
+         <h2>My Self Shivam Saway</h2>
+         <img />
+      );
    ```
 
 ## Question: What is babel ? How it works with modern javascript ?
