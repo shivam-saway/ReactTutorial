@@ -144,15 +144,22 @@ we should put all files in gitignore which can be reproduced while making build 
 ##### Answer: 
 A polyfill is a peice of code (usually in javascript) used to support modern application in older versions of browsers that do not natively supports it.
 
-For example, older version of browsers does not understand few CSS properties like text-shadow. So a polyfill code in javascript can be written to mimic the text-shadow effect.
+For example, older version of browsers does not understand few CSS properties like __text-shadow__. So a polyfill code in javascript can be written to mimic the text-shadow effect.
 
 Sometimes polyfills are written to avoid browser specific issues in implementation of specific features of application which works smoothly in latest browsers.
 
 However polyfills are rarely used in todays world. Polyfills were in trends in time of IE6 and Netscape web browsers. These older version of browsers interpret javascript diffrently. So to make the application work in same manner accross diffrent browsers poyfill was the best choice among the developers in pervious decades.
 
-## Question: What is reconcillation in react ?
+## Question: What is reconciliation in react ?
 ##### Answer:
+Reconciliation in react is the process of updating the UI whenever any state or prop(s) of any component changes.
 
+When a state(s) or prop(s) of a component changes, render method is invoked and it prepares a virtual DOM tree. React has a diffing algorithm which compares the latest virtual DOM with the current virtual DOM and finds the nodes where update has happenned. After getting the list of nodes where update in UI is required, React updates the HTML DOM with the recent changes.
+
+The diffing algorithm used by react is very fast and has a O(n) time complexity. The react diffing algorithm uses two assumtion which diffing two virtual DOM trees. 
+
+ - Two element of diffrent type will produce diffrent trees.
+ - The developer can hint at which child element may be stable across diffrent renders with a __key__ prop.
 ## Question: What is JSX ? How it is diffrent from HTML ?
 ##### Answer:
 Todo
