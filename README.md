@@ -197,8 +197,9 @@ Following are few advantages of using JSX.
 Babel is compiler for modern javascript langauges. Babel can do many things for us. Few is listed below.
 
 1. Babel can do syntax tranformation. For example
-
-2. This peice of code 
+2. Babel can generate polyfills.
+3. Babel can transform sourcecodes. For example
+4. This peice of code 
    ```
       const profile = (
          <div>
@@ -213,10 +214,10 @@ Babel is compiler for modern javascript langauges. Babel can do many things for 
       const profile = React.CreateElement('div', {
          React.CreateElement('h1','Hello'),
          React.CreateElement('h2','My Self Shivam Saway'),
-         React.CreateElement('img',null,{ src = "hello.png"})
+         React.CreateElement('img',null,{ src : "hello.png"})
       });
    ```
-
+5. Babel is configurable tool. It can increase the productivity of developers.
 Functional Component Function Name starts with capital letter or Capitalize Each Word : Convention in Modern Javascript.
 
 ## Server side routing
