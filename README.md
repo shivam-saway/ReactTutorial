@@ -188,8 +188,8 @@ Following are few advantages of using JSX.
    <h2>My Self Shivam Saway</h2>
    <img />
  );
- ```
- 
+   ```
+
 ## Question: What is babel ? How it works with modern javascript ?
 ##### Answer:
 Todo
