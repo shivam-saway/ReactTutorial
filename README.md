@@ -162,7 +162,25 @@ The diffing algorithm used by react is very fast and has a O(n) time complexity.
  - The developer can hint at which child element may be stable across diffrent renders with a __key__ prop.
 ## Question: What is JSX ? How it is diffrent from HTML ?
 ##### Answer:
-Todo
+JSX is syntax extension to JavaScript. It looks like HTML but it is not HTML. It has full power of JavaScript.
+
+Following are few advantages of using JSX.
+ - We can embedd any JavaScript expression with JSX. For Example 
+  - ```
+    const name = "Shivam Saway";
+    const Message = <h1>Hello {name}, Good Morning</h1>;
+    ```
+ - JSX is an expression too. Like we can embedd JavaScript with JSX, similarly we can do the reverse as well. We can embedd JSX with JavaScript. For example
+  - ```
+     function getUserNameWithMessage(user){
+      if(user){
+         return <h1> hello {user.name} </h1>;
+      } else {
+         return <h2> Please provide valid user </h2>;
+      }
+     }
+    ```
+ - 
 ## Question: What is babel ? How it works with modern javascript ?
 ##### Answer:
 Todo
