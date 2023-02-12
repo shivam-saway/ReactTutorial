@@ -211,10 +211,10 @@ Babel is compiler for modern javascript langauges. Babel can do many things for 
    ```
    will transformed to this by babel automatically
    ```
-      const profile = React.CreateElement('div', {
-         React.CreateElement('h1','Hello'),
-         React.CreateElement('h2','My Self Shivam Saway'),
-         React.CreateElement('img',null,{ src : "hello.png"})
+      const profile = React.CreateElement('div', null ,{
+         React.CreateElement('h1',null,'Hello'),
+         React.CreateElement('h2',null,'My Self Shivam Saway'),
+         React.CreateElement('img',{ src : "hello.png"})
       });
    ```
 5. Babel is configurable tool. It can increase the productivity of developers.
