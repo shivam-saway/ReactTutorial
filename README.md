@@ -191,6 +191,7 @@ Following are few advantages of using JSX.
          </div>
       );
    ```
+ - JSX can do code sanitization as well. It helps to protect you from cross site attacks.
 
 ## Question: What is babel ? How it works with modern javascript ?
 ##### Answer:
@@ -218,8 +219,85 @@ Babel is compiler for modern javascript langauges. Babel can do many things for 
       });
    ```
 5. Babel is configurable tool. It can increase the productivity of developers.
+
 Functional Component Function Name starts with capital letter or Capitalize Each Word : Convention in Modern Javascript.
 
+## Question: Is JSX Mandatory for React ?
+##### Answer: 
+No, JSX is not mandatory for React projects but it is recommended by react developers. JSX has been proven to be more developer friendly. It makes the code more readable etc.
+
+## Question: Is ES6 Mandatory for React ?
+##### Answer: 
+ES6 is a new version of JavaScript or you can ES6 is modern JavaScript. According to react, ES6 is not mandatory but React in itself uses ES6 features to build beatiful Modern UI. 
+
+One should know ES6 features like classes, arrow functions, variables, let, const etc. to understand the react library more efficiently.
+
+## Question: {TitleComponent} vs <TitleComponent /> vs <TitleComponent><TitleComponent/>
+##### Answer:
+{TitleComponent} is JavaScript Embedding in JSX. here, TitleComponent is a variable which will be evaluated only once when the component renders. No re-rendering will happen on state update on any event.
+
+<TitleComponent /> this syntax is actually JSX. No re-rendering will happen on state update on any event. With this syntax we can props only. We cannot send child elements with this syntax.
+
+<TitleComponent><TitleComponent /> With this syntax we can pass child elements as well along with props.
+
+## Question: How can i write comments in JSX ?
+##### Answer: 
+To write comments in JSX we can enclose the comment string within pair of forward slash and aestrick. For example
+
+``` {/* comment string */} ```
+
+## Question: What is React Fragment ?
+
+##### Answer:
+React Fragment is placeholder parent element for components which returns multiple childrens. It is an empty react element which can be used to group multiple react element together. It does not add any node to the HTML DOM. It is a kind of wrapper element. In React we have some function which accepts only one react element like render() life cycle function. So when we want
+a parent element but don't want it to add to HTML DOM we use react fragment.
+
+## Question: What is virtual DOM ?
+##### Answer: 
+Virtual DOM is the virtual representation of actual HTML DOM. Virtual DOM in react is the tree of React Elements prepared by render() lifecycle method to make or update the actual HTML DOM in browser.
+
+React prepares a new virtual DOM tree on every state update or prop update or force update. React reconciliation algorithm finds the diffrence between the last Virtual DOM and latest virtual DOM to update the actual HTML DOM tree with latest UI. This way manipulation DOM becomes faster.
+
+## Question : What is React Fibre ?
+##### Answer : 
+React Fibre is the algortihm used by react reconciler to differ the two virtual DOM trees efficiently.
+
+React Fibre is complete new algorithm which has asynchrous behaviour.
+
+Working of React Fibre.
+
+1. Fibre in react fibre represent a unit of work.
+2. React Fibre updates the DOM in two phases. First phase is Render Phase and Second Phase is Commit Phase.
+3. Render Phase: React does asynchronous things. It finds the diffrence in virtual DOM trees. During this phase beginWork() and completeWork() functions are called.
+4. Commit Phase: This phase is synchronous phase which updates the actual DOM tree with final virtual DOM tree.
+
+## Question: Why we need keys in React? When do we need keys in React?
+##### Answer:
+We need keys to let react know the diffrence between same type of HTML nodes. For example unordered list etc. This key attribute helps react in reconciliation to update UI faster. When we have keys defined in react element then react easily knows which node to update else react does reload of whole UI.
+
+## Question: Can we use index as keys in React ?
+##### Answer: 
+We can use index or any value as key in react technically. But React recommends to use unique key for each React element to distinguish each element from each other. 
+While using index as key in React, we ay face issues in reconcialiation. The index can change when we filter or sort the array of items or delete any element from the array of element.
+
+For example
+```
+   <ul>
+      <li key = "0">Milk</li>
+      <li key = "1">Butter</li>
+      <li key = "2">Bread</li>
+   </ul>
+```
+if we sort this list items then 
+
+```
+   <ul>
+      <li key = "0">Bread</li>
+      <li key = "1">Butter</li>
+      <li key = "2">Milk</li>
+   </ul>
+```
+From the above snippet you can see the diffrence in index of list.  
 ## Server side routing
 ## Client side routing
 ## Object.values
