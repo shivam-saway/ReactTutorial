@@ -308,6 +308,33 @@ if we sort this list items then
    </ul>
 ```
 From the above snippet you can see the diffrence in index of list. React will re-render all the elements again. This will happen every time when change in key happens due to any CRUD operation in list.
+
+## Question: What is props in React ?
+##### Answer: 
+Props in react stands for properties. In React when we create elements, we can pass props as parameter to the component defination. props is nothing but a javaScript object which can be used to pass configuration or parameters to react component. 
+For example
+```
+   <MyProfile name={"shivam"} lastname={"saway"} />
+```
+```
+   const MyProfile = (props) => {
+      const { name, lastname } = props;
+      return (
+         <div>
+            <h1>{name}</h1>
+            <h2>{lastname}</h2>
+         </div>
+      );
+   }
+```
+Here in the example above the MyProfile is React component and __name__ and __lastname__ are props or properties.
+
+## Question: What is config driven UI ?
+##### Answer:
+config driven UI is the concept of UI development when UI components renders conditionally on the basis of some configuration on some API response based on end user's behaviour/characterstics.
+
+Like modern OTT apps does when they show recommended TV series or dramas or apps like swiggy or zommato shows their discount offers based on geographic location of the end user.
+
 ## Server side routing
 ## Client side routing
 ## Object.values
