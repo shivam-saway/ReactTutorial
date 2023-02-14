@@ -288,16 +288,26 @@ For example
       <li key = "2">Bread</li>
    </ul>
 ```
+If we add one element to this list
+```
+   <ul>
+      <li key = "0">Milk</li>
+      <li key = "1">Butter</li>
+      <li key = "2">Bread</li>
+      <li key = "3">Ghee</li>
+   </ul>
+```
 if we sort this list items then 
 
 ```
    <ul>
       <li key = "0">Bread</li>
       <li key = "1">Butter</li>
-      <li key = "2">Milk</li>
+      <li key = "2">Ghee</li>
+      <li key = "3">Milk</li>
    </ul>
 ```
-From the above snippet you can see the diffrence in index of list.  
+From the above snippet you can see the diffrence in index of list. React will re-render all the elements again. This will happen every time when change in key happens due to any CRUD operation in list.
 ## Server side routing
 ## Client side routing
 ## Object.values
