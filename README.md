@@ -362,6 +362,29 @@ We will make one common index.js file from where we can export all the content i
 ```
    export * as utilities from "utils.js";
 ```
+## Question What is the importance of config.json file ?
+##### Answer:
+1. config.json file in react app store information about global static variable in JSON format and metadata of the application like dependencies, CDN URLs etc.
+2. we can also use .env file to store static and global information related to the project. we also have liberty to specify the runtime environment with this method. suppose if you want to create separate file for Dev and QA environment. You can create it like this __.env.dev__ and __.env.qa__ respectively. To access the info from this file we use process.env object. One condition with .env file method is that all variable name should prefix with __REACT_APP___.
+3. If we use webpack, then in webpack config file we can create one key as externals. with this key, we can store our custom static global variable.
+For example
+```
+webpack config file 
+{
+   ...
+   externals: {
+      'ConfigData': {
+         key value pair data
+      }
+   }
+}
+```
+```
+   File in which ConfigData is required
+   
+   import ConfigData from "ConfigData";
+   
+```
 ## Server side routing
 ## Client side routing
 ## Object.values
