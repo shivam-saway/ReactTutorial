@@ -393,13 +393,13 @@ React Hooks are javascript functions. Each React Hook has a purpose. Like useSta
 React Hooks are used to create side effects in react component to produce component life cycle effects like we used to did in class based component.
 
 Following are the most popular
-   1. useState
-   2. useEffect
-   3. useMemo
-   4. useContext
-   5. useRef
-   6. useParams
-   7. useReducer
+   1. useState - This hook returns one state variable and one updater function to update the state variable.
+   2. useEffect - This effect accepts a callback function and one dependency variable array. The callback function will be fired only when any element in dependency array changes its value.
+   3. useMemo - It returns a memoized value that helps in performance optimizations.
+   4. useContext - To return the current value for a context.
+   5. useRef - It returns a ref object with a .current property. The ref object is mutable. It is mainly used to access a child component imperatively.
+   6. useParams - The useParams hook returns an object of key/value pairs of the dynamic params from the current URL that were matched by the <Route path>. 
+   7. useReducer - A useState alternative to help with complex state management.
 etc. 
 
 React gives us liberty to make our own hooks.
