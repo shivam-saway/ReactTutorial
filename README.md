@@ -354,7 +354,7 @@ Suppose this file name is util.js
    const MyComponent = () => { 
       ...
    }
-   const Utilities = () => { //Named Export
+   const Utilities = () => {
       ...
    }
 ```
