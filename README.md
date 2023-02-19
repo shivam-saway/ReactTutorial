@@ -343,3 +343,5 @@ Like modern OTT apps does when they show recommended TV series or dramas or apps
 ## Super(props) - why it is there in constructor of react.
 ## can we make lifecycle method async ?
 ## can we make callback function of useEffect async ?
+## Code Spliting / Code Chunking / On Demand Loading / Dynamic import / Lazy Loading ? - Building Code chunks based on end user's intent to optimize the app performance.
+## lazy function from react library is used to implement Code Spliting / Code Chunking / On Demand Loading / Dynamic import / Lazy Loading. While doing lazy loading in react app, react suspends the loading upon first render of the lazy loaded component. To handle this suspend in component loading, we can use Suspense function from react library and wrap the component to lazy load inside the Suspense component.
