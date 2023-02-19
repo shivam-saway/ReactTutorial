@@ -385,6 +385,25 @@ webpack config file
    import ConfigData from "ConfigData";
    
 ```
+
+## Question: What are react hooks ?
+##### Answer:
+React Hooks are javascript functions. Each React Hook has a purpose. Like useState() hook creates a local state variable inside the function in which it is used. React Hook has a strict naming convention their name will always have prefix useHookName.
+
+React Hooks are used to create side effects in react component to produce component life cycle effects like we used to did in class based component.
+
+Following are the most popular
+   1. useState
+   2. useEffect
+   3. useMemo
+   4. useContext
+   5. useRef
+   6. useParams
+   7. useReducer
+etc. 
+
+React gives us liberty to make our own hooks.
+
 ## Server side routing
 ## Client side routing
 ## Object.values
@@ -394,4 +413,4 @@ webpack config file
 ## can we make lifecycle method async ?
 ## can we make callback function of useEffect async ?
 ## Code Spliting / Code Chunking / On Demand Loading / Dynamic import / Lazy Loading ? - Building Code chunks based on end user's intent to optimize the app performance.
-## lazy function from react library is used to implement Code Spliting / Code Chunking / On Demand Loading / Dynamic import / Lazy Loading. While doing lazy loading in react app, react suspends the loading upon first render of the lazy loaded component. To handle this suspend in component loading, we can use Suspense function from react library and wrap the component to lazy load inside the Suspense component. Suspense accepts a prop called fallback, which shows a placeholder UI till the lazy loaded component is not available to render.
+##### lazy function from react library is used to implement Code Spliting / Code Chunking / On Demand Loading / Dynamic import / Lazy Loading. While doing lazy loading in react app, react suspends the loading upon first render of the lazy loaded component. To handle this suspend in component loading, we can use Suspense function from react library and wrap the component to lazy load inside the Suspense component. Suspense accepts a prop called fallback, which shows a placeholder UI till the lazy loaded component is not available to render.
