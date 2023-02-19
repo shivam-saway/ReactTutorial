@@ -335,6 +335,33 @@ config driven UI is the concept of UI development when UI components renders con
 
 Like modern OTT apps does when they show recommended TV series or dramas or apps like swiggy or zommato shows their discount offers based on geographic location of the end user.
 
+## Question What is the diffrence between Named Export, Default Export and * as export ?
+
+##### Answer:
+1.
+```
+   const MyComponent = () => { 
+      ...
+   }
+   export const Utilities = () => { //Named Export
+      ...
+   }
+   export default MyComponent; // Default Export
+```
+2. * as Exporting Method
+Suppose this file name is util.js
+```
+   const MyComponent = () => { 
+      ...
+   }
+   const Utilities = () => { //Named Export
+      ...
+   }
+```
+We will make one common index.js file from where we can export all the content in on go.
+```
+   export * as utilities from "utils.js";
+```
 ## Server side routing
 ## Client side routing
 ## Object.values
