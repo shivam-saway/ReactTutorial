@@ -427,6 +427,9 @@ In Monolith Architecture the development of application is slower as compared to
 | --- | --- |
 | In Monolith architecture, the project is single unified | In Microservice architecture, the project is splitted into smaller chunks according to project features or modules  |
 | In Monolith, the project deployment is dependent on product features, If all are developed and tested then only project can be deployed | In Microservice architecture, deployment is independent of product's feature|
+| Not Scalable | Scalable |
+| Not Reliable | Reliable |
+| Barrier to new technology adaption | No Barrier in new technology adoption |
 
 ## Server side routing
 ## Client side routing
