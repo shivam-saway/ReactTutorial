@@ -431,6 +431,16 @@ In Monolith Architecture the development of application is slower as compared to
 | Not Reliable | Reliable |
 | Barrier to new technology adaption | No Barrier in new technology adoption |
 
+## Question: Why do we need useEffect Hook ?
+##### Answer:
+The useEffect hook provided by react is javascript function. It accepts two params, first is callback function and second is dependency array. the second param is optional. if we have not specifed dependency array than useEffect's callback will be fired after each render.
+But when we have dependency array as empty, the useEffect's callback will be fired only after first render of the component. If we have element in dependency array, callback will be fired when we have any change dependency array's elements. Hence, we use useEffect to mimic component life cycle method inside functional base component like we have class based component.
+
+## What is Optional Chaining ?
+##### Answer: 
+The optional chaining (?.) operator is used to access object's property or function. If the property accessed or function called is undefined or null then this operator short circuit the application instead of thrwoing an runtime error.
+
+   
 ## Server side routing
 ## Client side routing
 ## Object.values
