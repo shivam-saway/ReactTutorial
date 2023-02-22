@@ -404,6 +404,30 @@ etc.
 
 React gives us liberty to make our own hooks.
 
+## Question: What is a Microservice ?
+##### Answer:
+Microservice is an architectural style that structs an application.
+There are few benefits of Microservice architecture
+1. Independently deployable.
+2. Lossely coupled.
+3. Organized around business capabilities.
+4. Highly maintainable and testable.
+The microservice architecture enables the rapid development of large and complex application. In microservices architecture, we have sepration of concers. Each microservice is responsible for specific feature or module of project.
+
+## Question: What is a Monolith Architecture ?
+##### Answer:
+
+In Monolith Architecture, we have a single application which has code base for all the features and we have a single database as well. If one feature breaks then whole application breaks. Development of such application is not fast and is dependent on other modules of application as well.
+
+In Monolith Architecture the development of application is slower as compared to microservice architecture. 
+
+## Question: Diffrence between monolith and microservice ?
+##### Answer: 
+| monolith | microservice |
+| --- | --- |
+| In Monolith architecture, the project is single unified | In Microservice architecture, the project is splitted into smaller chunks according to project features or modules  |
+| In Monolith, the project deployment is dependent on product features, If all are developed and tested then only project can be deployed | In Microservice architecture, deployment is independent of product's feature|
+
 ## Server side routing
 ## Client side routing
 ## Object.values
