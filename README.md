@@ -456,6 +456,16 @@ Conditional rendering is a concept in which components renders only when a speci
       );
    }
 ```
+
+## Question: What is CORS ?
+##### Answer:
+CORS stands for cross origin resource sharing. It is an HTTP Header based mechanism. It allows server to indicate any origins other than its own from which browser should permit loading reasources.
+
+CORS also relies on mechanism by which browsers make preflight request to the server hosting the cross origin reasource, in order to check that server will permit the actual request.
+
+![image](https://user-images.githubusercontent.com/71207091/220835119-84412e0f-ff3b-45c4-b99e-1483eb9aebd7.png)
+
+
 ## Server side routing
 ## Client side routing
 ## Object.values
