@@ -440,7 +440,22 @@ But when we have dependency array as empty, the useEffect's callback will be fir
 ##### Answer: 
 The optional chaining (?.) operator is used to access object's property or function. If the property accessed or function called is undefined or null then this operator short circuit the application instead of thrwoing an runtime error.
 
-   
+## What is conditional rendering ? explain with code example.
+##### Answer:
+Conditional rendering is a concept in which components renders only when a specific condtition is true. This is a very useful feature to update the UI of the application in real time. For example
+```
+   const App = () => {
+      const [flag, setFlag] = useState(true);
+      return(
+         <>
+            {flag && <MyComponent/>} 
+            <Button onClick={() => {
+               setFlag(prevState => !prevState);
+            }}></Button>
+         </>
+      );
+   }
+```
 ## Server side routing
 ## Client side routing
 ## Object.values
