@@ -479,7 +479,7 @@ json() method is from the Response Interface. It returns a promise which resolve
    const MyRequest = new Request("some request url");
    fetch(myRequest).then(response => response.json())
    .then(data => console.log("data", data));
-   
+```
 ## Server side routing
 ## Client side routing
 ## Object.values
