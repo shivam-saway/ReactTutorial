@@ -471,6 +471,15 @@ The __async__ attribute in function declaration declares the function to execute
 The purpose of async/await is to simplify the syntax, necessary to consume promise-based APIs. 
 The behavior of async/await is similar to combining generators and promises.
 
+## Question: What is the use of "const data = await data.json()" in getRestaurants?
+##### Answer:
+json() method is from the Response Interface. It returns a promise which resolve when a response stream has been completly converted to JSON format. It is mainly used with the API call promises which resolves when they returns a response stream.
+
+```
+   const MyRequest = new Request("some request url");
+   fetch(myRequest).then(response => response.json())
+   .then(data => console.log("data", data));
+   
 ## Server side routing
 ## Client side routing
 ## Object.values
