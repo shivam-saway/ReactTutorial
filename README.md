@@ -448,7 +448,7 @@ Conditional rendering is a concept in which components renders only when a speci
       const [flag, setFlag] = useState(true);
       return(
          <>
-            {flag && <MyComponent/>} 
+            {flag && <MyComponent/>} // conditional rendering
             <Button onClick={() => {
                setFlag(prevState => !prevState);
             }}></Button>
