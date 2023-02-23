@@ -465,6 +465,11 @@ CORS also relies on mechanism by which browsers make preflight request to the se
 
 ![image](https://user-images.githubusercontent.com/71207091/220835119-84412e0f-ff3b-45c4-b99e-1483eb9aebd7.png)
 
+## Question: What is async and await ?
+##### Answer:
+The __async__ attribute in function declaration declares the function to execute asynchronously. While the __await__ keyword is permitted inside the async function's body. The combination of async and await enables asynchronous and promise based behaviour of the function.
+The purpose of async/await is to simplify the syntax, necessary to consume promise-based APIs. 
+The behavior of async/await is similar to combining generators and promises.
 
 ## Server side routing
 ## Client side routing
