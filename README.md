@@ -520,3 +520,21 @@ We can set the background property of a HTML tag with url function like done bel
 
 2. Through HTML
 We can add image to our application through "<img />" image tag. image tag accepts two attributes "src" and "alt". The "src" attributes holds the image source and "alt" attribute holds the alternative text or place holder text which will be viewed in DOM if somehow image does not load properly due to various reason.
+
+## Question: What would happen if we console.log(useState()) ?
+##### Answer: 
+The useState hook from react library returns two things when called inside a functional component. First is the state variable and second is the setter function of the respective state variable. It returns both of the state variable and setter function as a javascript array which we de-structure according to our need.
+```
+   Like consider this code snippet
+   import {useState} from "react"
+   
+   const Profile = () => {
+      const [name, setName] = useState("default name");
+   }
+   
+   so here useState is returning a javascript array which we are further destructuring.
+```
+Hence, if we do console.log(useState()), we would see a javascript array.
+   
+![image](https://user-images.githubusercontent.com/71207091/222625542-4aa77121-7e14-407e-8ad8-16ce2159371e.png)
+   
