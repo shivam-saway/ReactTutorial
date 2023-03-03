@@ -512,7 +512,9 @@ We can set the background property of a HTML tag with url function like done bel
       width: 100px;
    }
    
-   heigth and width are given to view the image, otherwise empty div will be created with zero height and width which will be not visible. background-repeat    sets to no-repeat to fill whole div with image only once. otherwise if image area is less than div's area, the empty area will be filled with repeated        image.
+   heigth and width are given to view the image, otherwise empty div will be created with zero height 
+   and width which will be not visible. background-repeat sets to no-repeat to fill whole div with image 
+   only once. otherwise if image area is less than div's area, the empty area will be filled with repeated image.
    
 ```
 
