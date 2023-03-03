@@ -545,3 +545,9 @@ useEffect hook from react library accepts two inputs. First is the callback func
    useEffect(setup, dependencies?)
 ```
 As we can see the dependencies is optional. Hence it is possible that we do not pass dependencies and only give the setup or callback function. If you don’t specify the dependencies at all, your Effect will re-run after every re-render of the component.
+   
+## Question: What is SPA ?
+##### Answer:
+SPA stands for single page application. In older web application, we used to create multiple files for different different pages. Like for main home page we use to create index.php or index.html and for other pages we used to create seprate files.
+But in SPA, we have only one file that is index.html which renders different different pages conditionally inside the same html file on the basis of routes defined.
+   
