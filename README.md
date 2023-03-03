@@ -492,3 +492,29 @@ json() method is from the Response Interface. It returns a promise which resolve
 ##### lazy function from react library is used to implement Code Spliting / Code Chunking / On Demand Loading / Dynamic import / Lazy Loading. While doing lazy loading in react app, react suspends the loading upon first render of the lazy loaded component. To handle this suspend in component loading, we can use Suspense function from react library and wrap the component to lazy load inside the Suspense component. Suspense accepts a prop called fallback, which shows a placeholder UI till the lazy loaded component is not available to render.
 ## Styled Component
 
+## Question: What are the various ways to add image to our App ? Explain with code example.
+##### Answer:
+Image can be added into a web app through css or html.
+1. Through CSS.
+We can set the background property of a HTML tag with url function like done below.
+
+```
+   Suppose we have a div tag on which we have applied a custom css class whose name is "add-image".
+   
+   <div class="add-image"></div>
+   
+   Inside css file. the following code has to be written
+   
+   .add-image{
+      background: url("image file path");
+      background-repeat: no-repeat;
+      height: 100px;
+      width: 100px;
+   }
+   
+   heigth and width are given to view the image, otherwise empty div will be created with zero height and width which will be not visible. background-repeat    sets to no-repeat to fill whole div with image only once. otherwise if image area is less than div's area, the empty area will be filled with repeated        image.
+   
+```
+
+2. Through HTML
+We can add image to our application through "<img />" image tag. image tag accepts two attributes "src" and "alt". The "src" attributes holds the image source and "alt" attribute holds the alternative text or place holder text which will be viewed in DOM if somehow image does not load properly due to various reason.
