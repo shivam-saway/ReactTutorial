@@ -548,6 +548,13 @@ As we can see the dependencies is optional. Hence it is possible that we do not 
    
 ## Question: What is SPA ?
 ##### Answer:
-SPA stands for single page application. In older web application, we used to create multiple files for different different pages. Like for main home page we use to create index.php or index.html and for other pages we used to create seprate files.
-But in SPA, we have only one file that is index.html which renders different different pages conditionally inside the same html file on the basis of routes defined.
+SPA stands for single page application. In older web application, we used to create multiple files for different different pages. Like for main home page we use to create index.php or index.html and for other pages we used to create seprate files. Those older apps worked on server side routing principle.
+But in SPA, we have only one file that is index.html which renders different different pages conditionally inside the same html file on the basis of routes defined. The modern SPA apps works on client side routing.
+
+## Question: What is diffrence between client side routing and server side routing ?
+##### Answer:
+Server side routing: 
+On every URL change the browser makes an HTTP call to the server for the content and then browser updates the HTML View port. This routing was used in older web apps. On every event which redirects user to diffrent route the browser makes a HTTP call to the server.
+Client side routing:
+This routing is used in modern web apps. On first app load, the browser receives the bundled app from the server. If user changes the app url or specially enters the route of specific page of app or any event redirects user to diffrent page of the app, the browser does not makes an HTTP call instead it already have data of all the pages. it just renders the required page content.
    
