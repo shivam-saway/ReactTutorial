@@ -538,3 +538,10 @@ Hence, if we do console.log(useState()), we would see a javascript array.
    
 ![image](https://user-images.githubusercontent.com/71207091/222625542-4aa77121-7e14-407e-8ad8-16ce2159371e.png)
    
+## Question: How will useEffect behave if we dont add a dependency array ?
+##### Answer:
+useEffect hook from react library accepts two inputs. First is the callback function and second is the dependency array. In official docs callback is reffered as setup.
+```
+   useEffect(setup, dependencies?)
+```
+As we can see the dependencies is optional. Hence it is possible that we do not pass dependencies and only give the setup or callback function. If you don’t specify the dependencies at all, your Effect will re-run after every re-render of the component.
