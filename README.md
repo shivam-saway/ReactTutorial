@@ -608,5 +608,5 @@ The component life cycle is divided in two phases. The first phase is called ren
 The life cycle methods in class based component in react library refers to the different phases of the components life. Following chart below shows the occurence of different life cycle methods of class based component.
 ![image](https://user-images.githubusercontent.com/71207091/222879622-200637c1-9685-430e-b1a9-e672d9fae7ca.png)
 
-   
+The first life cycle method is constructor the render function executes and after that in commit phase componentDidMount, componentDidUpdate and componentWillUnmount function executes them. componentDidMount will be called only once when the component gets loaded into actual DOM tree (Mounting) then after every state change the render function excecutes itself and componentDidUpdate will be called (Updating). When the user changes the route then the components will get umounted. This time componentWillUnmount executes itself. This part is called Unmounting.
  
