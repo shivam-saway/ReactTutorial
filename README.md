@@ -601,6 +601,12 @@ To Create nested routes, we can pass childrens to the children of the parent rou
     ],
   }
 ```
-   
+
+## Question: What is the order of lifecycle method in class based components ?
+##### Answer:
+The component life cycle is divided in two phases. The first phase is called render phase and second phase is called commit phase. In render phase the reconciliation happens like creating new virtual dom and finding the difference between new virtual dom and the older one. In the second phase the react library updates the actual DOM tree with the latest changes in the virtual dom.
+The life cycle methods in class based component in react library refers to the different phases of the components life. Following chart below shows the occurence of different life cycle methods of class based component.
+![image](https://user-images.githubusercontent.com/71207091/222879622-200637c1-9685-430e-b1a9-e672d9fae7ca.png)
+
    
  
