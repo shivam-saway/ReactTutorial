@@ -557,4 +557,50 @@ Server side routing:
 On every URL change the browser makes an HTTP call to the server for the content and then browser updates the HTML View port. This routing was used in older web apps. On every event which redirects user to diffrent route the browser makes a HTTP call to the server.
 Client side routing:
 This routing is used in modern web apps. On first app load, the browser receives the bundled app from the server. If user changes the app url or specially enters the route of specific page of app or any event redirects user to diffrent page of the app, the browser does not makes an HTTP call instead it already have data of all the pages. it just renders the required page content.
+
+## Question: How do you create nested routes react router dom configuration ?
+##### Answer: 
+To create routes configuration, we import __createBrowserRouter__ from __react-router-dom__ library. __createBrowserRouter__ is a function which accepts an array of javascript objects. The objects inside array holds the routing configuration.
+From react-router-dom documentation, the objects should be like as shown below
+```
+   {
+    path: "/",
+    element: <Root />,
+    loader: rootLoader,
+    children: [
+      {
+        path: "team",
+        element: <Team />,
+        loader: teamLoader,
+      },
+    ],
+  }
+
+```
+To Create nested routes, we can pass childrens to the children of the parent route object like as shown below
+
+```
+   {
+    path: "/",
+    element: <Root />,
+    loader: rootLoader,
+    children: [
+      {
+        path: "team",
+        element: <Team />,
+        loader: teamLoader,
+        children: [
+            {
+             path: "relative path should be given here"
+             element: <Element />
+             loader: rootLoader
+             // if you want further nesting you can pass childrens to this children.
+            }
+        ],
+      },
+    ],
+  }
+```
    
+   
+ 
